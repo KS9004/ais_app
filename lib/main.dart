@@ -44,12 +44,36 @@ class Welcome_Screen extends StatelessWidget {
                   color: Colors.white,
                   fontSize: 60.0,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Mania',
                 ),),
               ),
               Text("To Automated Irrigation System",style: TextStyle(
                 color: Colors.white54,
               ),
-              )],
+              ),
+              SizedBox(
+                height: 80.0,
+              ),
+              Material(
+                elevation: 5.0,
+                borderRadius: BorderRadius.circular(25.0),
+                color: Colors.pink,
+
+                child: MaterialButton(onPressed: null,
+                  minWidth: MediaQuery.of(context).size.width/2.5,
+                  padding: EdgeInsets.all(5.0),
+
+                  child: Text("Get Started",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40.0,
+                    fontFamily: 'Mania'
+                  ),),
+                ),
+              )
+            ],
           ),
       ),
       ),
